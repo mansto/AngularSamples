@@ -3,6 +3,15 @@ import { Injectable } from '@angular/core';
 @Injectable({
   providedIn: 'root',
 })
+export class UseExistingTestService {
+  log(): string {
+    return 'Hello from UseExistingTestService';
+  }
+}
+
+@Injectable({
+  providedIn: 'root',
+})
 export class UseExistingService2 {
   log(): string {
     return 'Hello from UseExistingService2';

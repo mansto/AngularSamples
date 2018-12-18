@@ -1,6 +1,12 @@
 
 import { Injectable } from '@angular/core';
 
+export class UseFactoryTestService {
+  log(): string {
+    return 'Hello from UseFactoryTestService';
+  }
+}
+
 export class UseFactoryService3 {
   log(): string {
     return 'Hello from UseFactoryService3';

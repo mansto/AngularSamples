@@ -1,6 +1,12 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 
+export class UseFactoryWithDependenciesTestService {
+  log(): string {
+    return 'Hello from UseFactoryWithDependenciesTestService';
+  }
+}
+
 export class UseFactoryWithDependenciesService3 {
   log(): string {
     return 'Hello from UseFactoryWithDependenciesService3';
