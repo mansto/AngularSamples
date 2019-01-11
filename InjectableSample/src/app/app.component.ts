@@ -13,6 +13,7 @@ import { UseClassWithIncorrectInterfaceService } from './Services/use-class-with
 })
 export class AppComponent {
   title = 'InjectableSample';
+
   public messageFromUseClassSvc: string;
   public messageFromUseClassWithIncorrectInterfaceSvc: string;
   public messageFromUseFactorySvc: string;
