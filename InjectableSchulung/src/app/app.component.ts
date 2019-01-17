@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { UseValueService } from './Services/use-value.service';
 
 @Component({
   selector: 'app-root',
@@ -8,7 +9,9 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'InjectableSchulung';
 
-  constructor() {
+  public messageFromUseValueSvc: string;
 
+  constructor(private readonly useValueSvc: UseValueService) {
+    this.messageFromUseValueSvc = useValueSvc.log();
   }
 }
